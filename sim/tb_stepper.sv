@@ -7,7 +7,7 @@ integer checks=0;
 always #10 clk_50mhz=~clk_50mhz;
 
 // 시뮬레이션 가속을 위한 파라미터 설정 (CLK_HZ=8, STEP_HZ=2)
-lab3_stepper #(.CLK_HZ(8), .STEP_HZ(1)) dut (
+lab3_stepper #(.CLK_HZ(8), .STEP_HZ(2)) dut (
     .clk_50mhz(clk_50mhz),
     .rst_p(rst_p),
     .enable(enable),
