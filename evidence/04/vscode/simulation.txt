@@ -1,0 +1,24 @@
+[1] PASS 로그
+RUN C:\msys64\mingw64\bin\iverilog.EXE -g2012 -Wall -I C:\Users\sumin\lab3_22_stepper\src -I C:\Users\sumin\lab3_22_stepper\sim -s tb_stepper -o C:\Users\sumin\lab3_22_stepper\build\sim\run-3f22d155ba514efa9a01b671a79ab3e2\sim.vvp C:\Users\sumin\lab3_22_stepper\src\lab3_stepper.v C:\Users\sumin\lab3_22_stepper\sim\tb_stepper.sv
+
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\lab3_22_stepper\build\sim\run-3f22d155ba514efa9a01b671a79ab3e2\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+LAB3_STEPPER_PASS checks=8
+C:\Users\sumin\lab3_22_stepper\sim\tb_stepper.sv:58: $finish called at 831000 (1ps)
+
+시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
+WAVE C:\Users\sumin\lab3_22_stepper\build\sim\wave.vcd
+ *  Terminal will be reused by tasks, press any key to close it. 
+
+[2] 수정 로그
+RUN C:\msys64\mingw64\bin\iverilog.EXE -g2012 -Wall -I C:\Users\sumin\lab3_22_stepper\src -I C:\Users\sumin\lab3_22_stepper\sim -s tb_stepper -o C:\Users\sumin\lab3_22_stepper\build\sim\run-e2322b973d6f4a019d9ef312ae2dbe71\sim.vvp C:\Users\sumin\lab3_22_stepper\src\lab3_stepper.v C:\Users\sumin\lab3_22_stepper\sim\tb_stepper.sv
+
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\lab3_22_stepper\build\sim\run-e2322b973d6f4a019d9ef312ae2dbe71\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+LAB3_STEPPER_PASS checks=8
+C:\Users\sumin\lab3_22_stepper\sim\tb_stepper.sv:58: $finish called at 1311000 (1ps)
+
+시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
+WAVE C:\Users\sumin\lab3_22_stepper\build\sim\wave.vcd
+ *  Terminal will be reused by tasks, press any key to close it. 
+
